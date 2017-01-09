@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alice au pays des merveilles</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="../">
+
+        <link rel="shortcut icon" href="images/favicon.png">
+
+        <link rel="stylesheet" href="css/book.css">
+
+        <!-- TODO use OpenSans from local -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/highlight.css">
+        <link rel="stylesheet" href="css/tomorrow-night.css">
+
+        <!-- TODO use MathJax from local -->
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = localStorage.getItem('theme');
+            if (theme == null) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = localStorage.getItem('sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar">
+            <ul class="chapter"><li class="affix"><a href="fr/index.html">Titre</a></li><li><a href="fr/terrier.html" class="active"><strong>1.</strong> Au fond du terrier</a></li><li><a href="fr/larmes.html"><strong>2.</strong> La mare aux larmes</a></li><li><a href="fr/cocasse.html"><strong>3.</strong> La course cocasse</a></li><li><strong>4.</strong> L'habitation du lapin blanc</li><li><strong>5.</strong> Conseils d'une chenille</li><li><strong>6.</strong> Porc et poivre</li><li><strong>7.</strong> Un thé de fous</li><li><strong>8.</strong> Le croquet de la reine</li><li><strong>9.</strong> Histoire de la fausse-tortue</li><li><strong>10.</strong> Le quadrille de homards</li><li><strong>11.</strong> Qui a volé les tartes ?</li><li><strong>12.</strong> Déposition d'Alice</li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <h1 class="menu-title">Alice au pays des merveilles</h1>
+
+                    <div class="right-buttons">
+                        <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <h1>Au fond du terrier</h1>
+<p><img src="images/Rabbit.png" alt="Terrier" /></p>
+<p>Alice, assise auprès de sa sœur sur le gazon, commençait à s’ennuyer de rester
+là à ne rien faire ; une ou deux fois elle avait jeté les yeux sur le livre que
+lisait sa sœur ; mais quoi ! pas d’images, pas de dialogues ! « La belle avance,
+» pensait Alice, « qu’un livre sans images, sans causeries ! »</p>
+<p>Elle s’était mise à réfléchir, (tant bien que mal, car la chaleur du jour
+l’endormait et la rendait lourde,) se demandant si le plaisir de faire une
+couronne de marguerites valait bien la peine de se lever et de cueillir les
+fleurs, quand tout à coup un lapin blanc aux yeux roses passa près d’elle.</p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a href="fr/index.html" class="mobile-nav-chapters previous">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="fr/larmes.html" class="mobile-nav-chapters next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="fr/index.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="fr/larmes.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+        <script src="js/highlight.js"></script>
+        <script src="js/book.js"></script>
+    </body>
+</html>
